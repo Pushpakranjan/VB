@@ -1,0 +1,60 @@
+
+MainBoxLayout:
+
+
+    orientation: "vertical"
+
+    BoxLayout:
+        size_hint: 1, .15
+
+        Label:
+            text: "Please enter code"
+            color: 1,0,1
+            font_size: 50
+
+
+
+
+
+
+        TextInput:
+            id: my_text
+            color: 1, 0, 0, 1
+            font_size: 60
+            multiline: False
+
+
+
+
+    BoxLayout:
+        size_hint: 1, .15
+
+        Button:
+            text: "Reset"
+            on_press: root.button_reset()
+        Button:
+            id: my_button
+            text: "Enter"
+            on_press: root.button_pressed()
+
+    Button:
+        id: my_buttona
+        text: "Pushpak"
+        background_color: 0,0,0,0
+
+
+        Image:
+            id: my_image
+            source: "Image/bg.PNG"
+            size: "950dp", "800dp"
+
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+
+
+
+
+
+
+
+
